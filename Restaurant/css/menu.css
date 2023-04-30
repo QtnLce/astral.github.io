@@ -1,0 +1,111 @@
+#menu{
+    height:auto;
+    width: auto;
+    position: relative;
+    overflow: hidden;
+    background-color: #131415;
+    padding: 12vh 5vw;
+}
+
+body{
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+body.active {
+    overflow-x: scroll;
+    scroll-behavior: auto;
+}
+
+#menu h2::before{
+    content: "";
+}
+
+.slideCard{
+    position: relative;
+    width: 45vw;
+    transform: translateY(-7vh);
+    margin: 2vh 4vw;
+    height: 60vh;
+    background: rgba(255, 255, 255, 0.226);
+    border-radius: 5vh 5vh 0 0;
+}
+
+.slideCard img{
+    height:20vh;
+    width: 100%;
+    display: flex;
+    object-fit: cover;
+    border-radius: 5vh 5vh 0px 0;
+    text-align: center;
+    filter: grayscale(100%);
+    transition: filter .5s;
+}
+
+.slideCard:hover img{
+    filter: grayscale(0);
+}
+
+.slideCard h3{
+    position: absolute;
+    color: #fff;
+    top: 0px;
+    font-size:2em;
+    margin: 3vh;
+}
+
+#slideContainer{
+    display: flex;
+    transform: translateY(10vh);
+} 
+
+table{
+    color: white;
+    font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+    font-weight:lighter;
+    font-size: 1em;
+}
+
+td{
+    padding: 10px;
+}
+
+.price{
+    width: 75px;
+}
+
+.ttc{
+    font-size: .5em
+}   
+
+th{
+    color: #ffffffbb;
+}
+
+#menu p{
+    color: #fff;
+    font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    margin-bottom:  7vh;
+}
+
+@media(max-width: 768px){
+    #menu {
+        height:auto;
+    }
+
+    #slideContainer{
+        overflow-x: visible;
+        overflow-y: scroll;
+        height: auto;
+
+    }
+
+    .slideCard h3{
+        transform: translateY(2vh);
+    }
+
+    .slideCard{
+        height: auto;
+    }
+}

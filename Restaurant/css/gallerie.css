@@ -1,0 +1,30 @@
+#gallery{
+    height: 50vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+    white-space : nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    
+}
+
+.imgGallery .img{
+    height: 51vh;
+    object-fit: cover;
+    animation: Caroussel 50s linear infinite;
+}
+
+@keyframes Caroussel{
+    0% {
+        transform: translateX(-100vw);
+    }
+    50% {
+        transform: translateX(0vw);
+    }
+    100%{
+        transform: translateX(102vw);
+    }
+}

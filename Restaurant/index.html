@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/heroBanner.js" defer  ></script>
+    <script src="js/infos.js" defer></script>
+    <link rel="stylesheet" href="css/herobanner.css">
+    <link rel="stylesheet" href="css/presentation.css"  >
+    <link rel="stylesheet" href="css/gallerie.css">
+    <link rel="stylesheet" href="css/menu.css"  >
+    <link rel="stylesheet" href="css/infos.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="shortcut icon" href="ressource/LogoBlack.png" type="image/x-icon">
+    <style>
+        @import url("ressource/font/Ubuntu-Bold.ttf");
+    </style>
+    <title>l'Astral | le restaurant des étoiles étoilé</title>
+</head>
+<body>
+    <header id="header">
+        <button id="CTAmenu" class="active" ><img src="ressource/burger.svg" alt="Ouvrir le menu"></button>
+        <nav id="nav">
+            <button id="CTAmenu" class="close" ><img src="ressource/close.svg" alt="Ouvrir le menu"></button>
+            <ul>
+                <li class="logo"><a href="#header"><img src="ressource/LogoWhite.png" alt="Logo de Astral">Astral</a></li>
+                <li class="menu"><a href="#presentation">Présentation</a></li>
+                <li class="menu"><a href="#menu">Menu</a></li>
+                <li class="menu"><a href="#gallery">Galerie</a></li>
+                <li class="menu"><a href="#info">Infos</a></li>
+            </ul>
+        </nav>
+        <section id="heroBanner">
+            <h1><div class="title">Astral <span id="hidden">,</span></div><div class="title">le restaurant des étoiles,</div><div class="title">étoilé</div></h1>
+        </section>
+        <button>
+            <a href="#presentation">see more &darr;
+                <div class="buttonBorder"></div>
+            </a>
+        </button>
+    </header>
+    <article id="presentation">
+        <h2 id="presentationTitle">Présentation</h2>
+        <div id="sectionContainer">
+            <section class="presentationCase" id="presentation1">
+                <h4>Notre départ</h4>
+                <p>Le restaurant dans l'espace est né de la fascination pour l'exploration spatiale et 
+                    des opportunités économiques et touristiques. Les missions spatiales habitées et la 
+                    technologie spatiale ont permis sa création, stimulant la recherche scientifique en 
+                    nutrition et offrant une expérience gastronomique unique, contribuant ainsi à la 
+                    croissance économique et scientifique. C'est ainsi que notre projet de restaurant 
+                    de cuisine moléculaire est né.
+                </p>
+                <img src="ressource/projet.png" alt="Notre restaurant">
+            </section>
+            <section class="presentationCase" id="presentation2">
+                <h4>Notre projet</h4>
+                <p>
+                    La création d'un restaurant, de cuisine moléculaire, dans l'espace est possible grâce aux missions 
+                    habitées et à la technologie spatiale. Les agences spatiales et les 
+                    entreprises privées cherchent de nouvelles opportunités économiques et 
+                    touristiques, tandis que le restaurant stimule la recherche scientifique en 
+                    alimentation et nutrition. L'entreprise contribue à la croissance économique 
+                    et scientifique tout en offrant une expérience gastronomique unique.
+                </p>
+                <img src="ressource/realisation.jpg" alt="construction du restaurant">
+            </section>
+            <section class="presentationCase" id="presentation3">
+                <h4>Le personnel</h4>
+                <p>
+                    L'équipage du restaurant spatial est composé d'un groupe de professionnels 
+                    qualifiés et entraînés pour travailler dans un environnement spatial exigeant. 
+                    Le chef cuisinier a une grande expérience culinaire et est capable de cuisiner 
+                    des plats délicieux dans des conditions extrêmes. Des techniciens et des 
+                    ingénieurs assurent le bon fonctionnement de l'équipement de cuisine et de 
+                    l'ensemble du système de support de vie du restaurant. 
+                </p>
+                <img src="ressource/personel.jpg" alt="Nos techniciens entrain d'effectue une maintenance">
+            </section>
+        </div>
+    </article>
+    <article id="menu" class="active">
+        <h2>Le menu</h2>
+        <p>
+            L'accès à la nourriture dans l'espace est très difficile et couteux, c'est pour ça que
+            nous ne servons que de la cuisine moléculaire. Ce domaine de 
+            la gastronomie qui utilise des techniques scientifiques pour transformer les aliments en 
+            des formes, textures et saveurs nouvelles et surprenantes. En combinant l'art culinaire et 
+            la science, nous sommes capables de créer des plats délicieux et nutritifs qui répondent 
+            aux besoins de l'humain en termes de santé et de bien-être dans des environnements extrêmes. 
+            En optant pour cette approche, nous sommes en mesure de proposer une expérience culinaire 
+            unique et mémorable, tout en relevant les défis de la vie dans l'espace.
+        </p>
+         <div id="slideContainer">
+            <div id="slide1" class="slideCard">
+                <img src="ressource/entree.jpg" alt="Une entrée de notre chef">
+                <h3>Entrées</h3>                    
+                    <table class="tftable">
+                        <tr class="entete"><th>Nom</th><th>Prix</th></tr>
+                        <tr><td>Fleurs de légumes en tempura</td><td class="price">12€<span class="ttc">ttc</span></td></tr>
+                        <tr><td>Faux-caviar d'algues et blinis au quinoa</td><td class="price">15€<span class="ttc">ttc</span></td></tr>
+                        <tr><td>Oeufs de caille mimosa revisités</td><td class="price">18€<span class="ttc">ttc</span></td></tr>
+                        <tr><td>Tartare de boeuf façon carpaccio</td><td class="price">22€<span class="ttc">ttc</span></td></tr>
+                    </table>  
+            </div>
+            <div id="slide2" class="slideCard">
+                <img src="ressource/plat.png" alt="Un plat de notre chef">
+                <h3>Plats</h3>
+                <table class="tftable">
+                    <tr class="entete"><th>Nom</th><th>Prix</th></tr>
+                    <tr><td>Sphères de caviar à l'azote liquide</td><td class="price">30€<span class="ttc">ttc</span></td></tr>
+                    <tr><td>Gelée de tomate et mozzarella avec huile d'olive en poudre</td><td class="price">25€<span class="ttc">ttc</span></td></tr>
+                    <tr><td>Fruits de mer à la vapeur servis avec mousse de citron et gelée de corail</td><td class="price">40€<span class="ttc">ttc</span></td></tr>
+                </table> 
+            </div>
+            <div id="slide3" class="slideCard">
+                <img src="ressource/desert.jpg" alt="Un dessert de notre chef">
+                <h3>Desserts</h3>
+                <table class="tftable">
+                    <tr class="entete"><th>Nom</th><th>Prix</th></tr>
+                    <tr><td>Perles de fruits</td><td class="price">12€<span class="ttc">ttc</span></td></tr>
+                    <tr><td>Glace fumée à la vapeur d'azote liquide</td><td class="price">15€<span class="ttc">ttc</span></td></tr>
+                    <tr><td>Sorbet au thé matcha</td><td class="price">12€<span class="ttc">ttc</span></td></tr>
+                    <tr><td>Choux à la crème glacée</td><td class="price">10€<span class="ttc">ttc</span></td></tr>
+                </table> 
+            </div>
+         </div>
+    </article>
+    <article id="gallery">
+        <span class="imgGallery"><img class="img" class="animation" src="ressource/img1.webp" alt="Bille aromatisé"></span>
+        <span class="imgGallery"><img class="img" class="animation" src="ressource/img2.jpg" alt="Glace caramélisé"></span>
+        <span class="imgGallery"><img class="img" class="animation" src="ressource/img3.webp" alt="Café gourmand"></span>
+        <span class="imgGallery"><img class="img" class="animation" src="ressource/img4.jpg" alt="Mochi magique"></span>
+        <span class="imgGallery"><img class="img" class="animation" src="ressource/img5.jpg" alt="Le desert mystère"></span>
+        <span class="imgGallery"><img class="img" class="animation" src="ressource/img1.webp" alt="Bille aromatisé"></span>
+        <span class="imgGallery"><img class="img" class="animation" src="ressource/img2.jpg" alt="Glace caramélisé"></span>
+        <span class="imgGallery"><img class="img" class="animation" src="ressource/img3.webp" alt="Café gourmand"></span>
+        <span class="imgGallery"><img class="img" class="animation" src="ressource/img4.jpg" alt="Mochi magique"></span>
+        <span class="imgGallery"><img class="img" class="animation" src="ressource/img5.jpg" alt="Le desert mystère"></span>
+    </article>
+    <article id="info">
+        <div id="sky"></div>
+        <h2>Nos infos</h2>
+        <div id="infoPresentationContainer">
+            <h4>Comment essayer l'expérience?</h4>
+            <p>
+                Êtes-vous prêt pour une <span class="valeur">expérience gastronomique inoubliable</span> qui vous 
+                transportera 
+                au-delà de notre planète ? Notre restaurant dans l'espace offre une occasion unique de 
+                savourer des plats exquis tout en flottant dans un environnement futuriste. Pour cela, 
+                vous devez <span class="valeur">être majeur</span> et en <span class="valeur">bonne santé</span>. Si ces conditions sont réunies, libre à vous 
+                de postuler <span class="valeur">ci-dessous.</span>
+            </p>
+        </div>
+        <form action="">
+            <input class="entre" type="text" placeholder="Nom" id="fname" name="fname" value="">
+            <input class="entre" type="text" placeholder="Prénom" id="lname" name="lname" value="">
+            <input class="entre" type="date" id="start" name="trip-start" value="">
+            <a href="#"><input class="button" type="submit" value="Décollage 🚀"></a>
+        </form>
+        <div id="infoBaseline">
+            <div id="infoDivers">
+                <table>
+                        <tbody>
+                            <tr>
+                                <td>📍</td>
+                                <td> Nos décollage ont lieu depuis Cap Canaveral, <span class="underline"> PO Box 326,
+                                    Cape Canaveral FL 32920,
+                                    United States</span> </td>
+                            </tr>
+                            <tr>
+                                <td>⏰</td>
+                                <td>Nous faisons des décollage de Mars à Septembre. Le service
+                                    ne se fait que le soir et commence à 20h UTC.</td>
+                            </tr>
+                        </tbody>
+                </table>
+            </div>
+            <div id="infoPrix">
+                <h4>décollage à partir de <br> <span class="prixHigh">180 000€</span> <br> + prix du repas </h4>
+            </div>
+        </div>
+    </article>
+    <footer>
+        <table>
+            <tbody>
+                <tr>
+                    <td><img src="ressource/LogoWhite.png" alt="Logo de l'entreprise"></td>
+                    <td>
+                        <ul>
+                            <li><a href="#"><img src="ressource/you.svg" alt="Logo youtbe"></a></li>
+                            <li><a href="#"><img src="ressource/insta.svg" alt="Logo instagram"></a></li>
+                            <li><a href="#"><img src="ressource/twiter.svg" alt="Logo twitter"></a></li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li><a href="#heroBanner">Acceuil</a></li>
+                            <li><a href="#presentation">Présentation</a></li>
+                            <li><a href="#menu">Menu</a></li>
+                            <li><a href="#gallery">Gallerie</a></li>
+                            <li><a href="#info">Infos</a></li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h6>Crée par Quentin M. pour le concours n°6</h6>
+    </footer>
+</body>
+</html>

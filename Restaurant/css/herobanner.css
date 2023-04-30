@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    max-width: 101vw;
+}
+
+#header{
+    height: 100vh;
+}
+
+nav{
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    background: rgba(0, 0, 0, 0.518);
+    box-shadow: 0 8px 32px 0 rgba(193, 193, 193, 0.37);
+    backdrop-filter: blur( 4px );
+    height: 10vh;
+    align-items: center;
+    display: flex;
+}
+
+nav img{
+    height:50px;
+}
+
+nav ul{
+    font-size: 1.5em;
+    display: flex;
+    width:100%;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo a{
+    margin-right: 1vw;
+    padding-right: 1vw;
+    font-size: 10px;
+    border-right: 2px solid white;
+    color: white;
+    text-decoration: none;
+    font-family: "Ubuntu", Arial, Helvetica, sans-serif ;
+    display: flex;
+    align-items: flex-start;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    color: black;
+    height: 10vh;
+}
+
+.logo img{
+    transition: transform 0.2s ;
+}
+
+.logo:hover img{
+    transform: rotateZ(-45deg);
+}
+
+.menu a{
+    color: #fff;
+    text-decoration: none;
+    font-family: "Ubuntu", Arial, Helvetica, sans-serif ;
+    z-index: 2;
+}
+
+.menu{
+    padding: 0px 25px;
+    text-align: center;
+}
+
+.menu a{
+    color: rgb(183, 183, 183);
+    transition: all 0.2s
+}
+
+.menu a:hover{
+    color: white;
+}
+
+
+#heroBanner{
+    height: 100vh;
+    width: 100%;
+    background-image: url(background/bacground.jpg);
+    background-color: rgba(0, 0, 0, 0.311);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: grid;
+    align-items: center;
+    top: 0;
+}
+
+#heroBanner h1{
+    color: #fff;
+    z-index: 9;
+    left: 0px;
+    font-size: 3rem;
+    font-family: "Ubuntu";
+    width: 75vw;
+    padding-left:3vw;
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    transition: all 1s;
+}
+
+#heroBanner h1.hidden{
+    transform: translateY(50vh);
+    opacity: 0;
+}
+
+
+#heroBanner h1::before{
+    position: absolute;
+    border-radius: 10px;
+    content: "";
+    left:10%;
+    top: 0px;
+    width: 10px;
+    background-color: white;
+    animation: moveRight 1.2s ease-in-out forwards;
+    animation: appearRight 1.7s 0.5s   forwards;
+    justify-content: flex-start;
+    display: flex;
+}
+
+div.title:nth-of-type(1) {
+    animation: moveRight 0.5s ease-in-out forwards;
+}
+
+div.title:nth-of-type(2) {
+    animation: moveRight 0.7s ease-in-out forwards;
+}
+
+div.title:nth-of-type(3) {
+    animation: moveRight 1s ease-in-out forwards;
+}
+
+.buttonBorder{
+    border-radius: 50%;
+    border: 2px dashed white;
+    transition: all 0.2s;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 0px;
+}
+
+button{
+    position: relative;
+    bottom: 25vh;
+    height: 100px;
+    width: 100px;
+    background: none;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+}
+
+button a{
+    height: 100%;
+    display: flex;
+    font-size:1em;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.buttonBorder:hover{
+    cursor: pointer;
+    animation: borderRotatateAnim 20s infinite linear;
+}
+
+button:hover a{
+    color: white;
+}
+
+
+ 
+@keyframes appearRight {
+    from{
+        height: 0px;
+        opacity: 0;
+    }
+    to{
+        height: 100%;
+        opacity: 1;
+        display: none;
+    }
+}
+
+@keyframes moveRight {
+    from{
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(100px);
+    }
+  }
+
+  @keyframes borderRotatateAnim {
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+
+  }
+
+#CTAmenu{
+    display: none;
+}
+
+#CTAmenu img{
+    display: none;
+}
+
+button{
+    display: none;
+}
+
+@media(max-width: 768px){
+    nav{
+        display: none;
+    }
+
+    nav.active{
+        background-color: rgba(0, 0, 0, 0.753);
+        height: 100vh;
+        display: flex;
+        animation: navOpened 1s;
+    }
+
+    nav .logo{
+        padding: 5vh;
+        border: 1px solid white;
+        margin-top: 10vh;
+        position: absolute;
+        top: 0;
+    }
+
+    .logo a{
+        border-right: none;
+    }
+
+    ul{
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    @keyframes navOpened {
+        from{
+            transform: translateX(200vw);
+        }
+
+        to{
+            transform: translateX(0);
+        }
+        
+    }
+
+    button{
+        width:90vw;
+        display: block;
+    }
+
+    #CTAmenu{
+        left: 50vw;
+        border: none;
+        position: fixed;
+        top: 2vh;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    #CTAmenu img{
+        height: 5vh;
+        width: 5vh;
+        background: rgb(255, 255, 255);
+        border-radius: 1vh;
+        display: block;
+    }
+
+    #CTAmenu:hover{
+        cursor: pointer;
+    }
+    
+    #close{
+        background:red;
+    }
+}

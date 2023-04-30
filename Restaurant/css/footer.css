@@ -1,0 +1,64 @@
+footer{
+    height:25vh;
+    width: 100vw;
+    background-color: #131416;
+    position: relative;
+}
+
+footer table{
+    width: 100vw;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer td{
+    width:30vw;
+}
+
+footer td:nth-child(2){
+    text-align: center;
+}
+
+footer img{
+    height:10vh;
+}
+
+footer ul{
+    list-style-type: none;
+    max-height: 20vh ;
+}
+
+footer li img{
+    height: 4vh;
+    transition: height .3s;
+}
+
+footer li img:hover{
+    height: 6vh;
+}
+
+footer td:nth-child(3){
+    text-align: right;
+}
+
+footer a{
+    color: rgba(255, 255, 255, 0.514);
+    text-decoration: none;
+    transition: color .4s;
+}
+
+footer a:hover{
+    color: white;
+}
+
+footer h6{
+    color: white;
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    margin: 10px;
+    text-align: center;
+}
